@@ -1,0 +1,254 @@
+@charset "EUC-KR";
+
+/*별점*/
+
+/* 검색 상단이미지 */
+.search{
+	width : 1100px; 
+	height : 350px;
+	background-image : url("../css/Search.jpg");
+	margin-top :;
+	margin-left :;
+}
+
+
+/* 소분류클릭시 상단맥주설명 */
+.info{
+	margin-left : 120px;
+	margin-right : 120px;
+	margin-top : 50px;
+}
+
+
+/* 소분류 클릭시 상단이미지 */
+.small{
+	width : 1100px; 
+	height : 350px;
+	background-image : url("../css/Beer.jpg");
+	margin-top :15px;
+	margin-left : 50px;
+}
+
+/* Modal */
+
+.modal_beerDB {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform
+    0.25s;
+}
+
+.modal_beerDB_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #202024;
+  padding: 1rem 1.5rem;
+  width: 800px;
+  height: 400px;
+  border-radius: 0.5rem;
+  
+}
+
+.show_modal_beerDB {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+ 
+}
+
+/* Main */
+
+	#main {
+		
+		padding-top: 0px;
+    	margin-top: -70;
+    	border-top-width: 0px;
+    	margin-left: -50;
+   	 	margin-right: -40;
+	}
+
+		@media screen and (max-width: 736px) {
+
+			#main {
+				padding: 3em 0 1em 0;
+
+			}
+
+		}
+
+		#main .inner {
+			width: 100%;
+			max-width: 90em;
+			margin: 0 auto;
+			margin-top: 0px;
+		}
+
+			@media screen and (max-width: 480px) {
+
+				#main .inner {
+					width: 95%;
+				}
+
+			}
+/* Box */
+
+	.thumbnails {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-align-items: stretch;
+		-webkit-align-items: stretch;
+		-ms-align-items: stretch;
+		align-items: stretch;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+		.thumbnails .box {
+			margin: 0 1em 2em 1em;
+			width: 218px;	
+			height : 366px;
+			margin-top: 70px;
+			
+		}
+
+			/* @media screen and (max-width: 1280px) {
+
+				.thumbnails .box {
+					width: 50%;
+				}
+
+			} */
+
+			/* @media screen and (max-width: 736px) {
+
+				.thumbnails .box {
+					width: 100%;
+				}
+
+			} */
+/* Box */
+
+	.box {
+		border-radius: 4px;
+		margin-bottom: 2em;
+		background: #444444;
+		text-align: center;
+		font-size:15px;
+		font-weight: bold ;
+		font-family: Arial ;
+		line-height:  2;
+		
+	}
+
+		.box > :last-child,
+		.box > :last-child > :last-child,
+		.box > :last-child > :last-child > :last-child {
+			margin-bottom: 0;
+		}
+
+		.box .image.fit {
+			margin: 0;
+		}
+
+		.box .image img {
+			border-radius: 4px 4px 0 0;
+		}
+
+		.box .inner {
+			padding: 2em;
+			width:100%;
+			text-align:center; 
+			padding-right:0px;
+			padding-top:30px; 
+			padding-left:0px;
+			padding-bottom:30px; 
+			height:100px;
+			
+			
+		}
+
+			@media screen and (max-width: 480px) {
+
+				.box .inner {
+					padding: 1em;
+					
+				}
+
+			}
+
+		.box.alt {
+			border: 0;
+			border-radius: 0;
+			padding: 0;
+		}
+/* Image */
+
+	.image {
+		border-radius: 4px;
+		border: 0;
+		display: inline-block;
+	}
+
+		.image img {
+			border-radius: 4px;
+			display: block;
+		}
+
+		.image.left, .image.right {
+			max-width: 40%;
+		}
+
+			.image.left img, .image.right img {
+				width: 100%;
+			}
+
+		.image.left {
+			float: left;
+			padding: 0 1.5em 1em 0;
+			top: 0.25em;
+		}
+
+		.image.right {
+			float: right;
+			padding: 0 0 1em 1.5em;
+			top: 0.25em;
+		}
+
+		.image.fit {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+			.image.fit img {
+				width: 100%;
+			}
+
+		.image.main {
+			display: block;
+			margin: 0 0 3em 0;
+			width: 100%;
+		}
+
+			.image.main img {
+				width: 100%;
+			}
+			

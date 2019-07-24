@@ -1,0 +1,68 @@
+@charset "EUC-KR";
+
+#Table-Layout {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.RequestRead {
+	width: 1000px;
+	border: groove;
+	background-color:#EEEEEE;
+}
+
+.RequestReply {
+	width: 1000px;
+	border: groove;
+	background-color:#DDDDDD;
+}
+
+.RequestList {
+	margin: 100px auto 0px auto;
+	width: 1000px;
+}
+
+.PagingList {
+	width: 1000px;
+}
+
+.Paging {
+	text-align: center;
+}
+
+.Option {
+	text-align: right;
+}
+
+.RequestList, .RequestList th, .RequestList td {
+	border: 1px solid gray;
+	border-width: 1px 0;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 8px;
+}
+
+.RequestList th {
+	background-color: #999;
+	font-size: 1.1em;
+	color: #fff;
+	border-width: 2px 0;
+	cursor: default;
+}
+
+.RequestList td {
+	border-style: groove;
+}
+
+.RequestList tr:hover {
+	background-color: #C8C8C8;
+	cursor: pointer;
+}
+
+.RequestObj1 {
+	background-color: #E6E6E6;
+}
+
+.RequestObj2 {
+	background-color: #FFF;
+}

@@ -1,0 +1,241 @@
+@charset "EUC-KR";
+
+body {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	font-size: 16px;
+	color: #999;
+}
+
+form {
+	margin: 0 auto;
+}
+
+input {
+	width: 200px;
+	height: 40px;
+	background-color: #efefef;
+	border-radius: 6px;
+	border: 1px solid #dedede;
+	padding: 10px;
+	font-size: 1em;
+	color: #3a3a3a;
+}
+
+
+input:focus {
+	border: 1px solid #97d6eb;
+}
+#UserjoinSubmit{
+	align: center; 
+	width : 200px;
+	height: 50px;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	background-color:#2980b9;
+	color:white;
+	font-family:Fantasy;
+	font-size:25;
+}
+#UserEmailSearchSubmit{
+	align: center; 
+	width : 200px;
+	height: 50px;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	background-color:#2980b9;
+	color:white;
+	font-family:Fantasy;
+	font-size:25;
+}
+#UserPwdSearchSubmit{
+	align: center; 
+	width : 200px;
+	height: 50px;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	background-color:#2980b9;
+	color:white;
+	font-family:Fantasy;
+	font-size:25;
+}
+#loginSubmit {
+	align: center; 
+	width : 200px;
+	height: 50px;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	background-color:#2980b9;
+	color:white;
+	font-family:Fantasy;
+	font-size:25;
+}
+
+.joinButton,.emailSearchButton,.pwdSearchButton {
+	background-color: #ffffff;
+	align: center; 
+	width : 120px;
+	height: 30px;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	font-size: 0.5em;
+}
+
+#loginSubmit:hover {
+	color: #fff;
+	background-color: #63f7ff;
+	opacity: 0.9;
+}
+
+.joinButton:hover,.emailSearchButton:hover,.pwdSearchButton:hover {
+	color: #000;
+	background-color: #f1ffbc;
+	opacity: 0.9;
+}
+
+.modal_Login {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(1.1);
+	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform
+		0.25s;
+}
+
+.modal_Login_content {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 1rem 1.5rem;
+	width: 500px;
+	height: 500px;
+	border-radius: 0.5rem;
+	
+}
+
+.show_modal_Login {
+	z-index: 2;
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.0);
+	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal_Join {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(1.1);
+	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal_Join_content {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 1rem 1.5rem;
+	width: 500px;
+	height: 650px;
+	border-radius: 0.5rem;
+	
+}
+
+.show_modal_Join {
+	z-index: 2;
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.0);
+	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal_EmailSearch {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(1.1);
+	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform
+		0.25s;
+}
+
+.modal_EmailSearch_content {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 1rem 1.5rem;
+	width: 500px;
+	height: 500px;
+	border-radius: 0.5rem;
+}
+
+.show_modal_EmailSearch {
+	z-index: 2;
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.0);
+	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal_PwdSearch {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(1.1);
+	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform
+		0.25s;
+}
+
+.modal_PwdSearch_content {
+	position: absolute;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 1rem 1.5rem;
+	width: 500px;
+	height: 500px;
+	border-radius: 0.5rem;
+}
+
+.show_modal_PwdSearch {
+	z-index: 2;
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.0);
+	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
